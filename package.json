@@ -1,0 +1,23 @@
+{
+  "name": "staticsite",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MSL19/staticSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MSL19/staticSite/issues"
+  },
+  "homepage": "https://github.com/MSL19/staticSite#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
