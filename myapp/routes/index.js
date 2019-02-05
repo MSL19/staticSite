@@ -1,29 +1,30 @@
 var express = require('express');
 var router = express.Router();
+var path = require('path');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 //  res.render('index', { title: 'Express' });
-res.sendFile(path.join(__dirname, '../', 'index.html'))
+res.render('index')
 });
-router.get('/login', function(req, res, next) {
+/*router.get('/login', function(req, res, next) {
   //  res.render('index', { title: 'Express' });
-  res.sendFile(path.join(__dirname, '../pages', 'login.html'))
-  });
+  res.sendFile(path.join(__dirname, '../public/pages/', 'login.html'))
+  });*/
 router.get('/dashboard', function(req, res, next) {
     //  res.render('index', { title: 'Express' });
-    res.sendFile(path.join(__dirname, '../pages', 'dashboard.html'))
-    });
+res.render('dashboard')  
+  });
 
 router.get('/contact', function(req, res, next) {
      //  res.render('index', { title: 'Express' });
-    res.sendFile(path.join(__dirname, '../pages', 'contact.html'))
+     res.render('contact')  
     });
 
 router.get('/about', function(req, res, next) {
       //  res.render('index', { title: 'Express' });
-     res.sendFile(path.join(__dirname, '../', 'about.html'))
-     });
+      res.render('about')  
+    });
    
 
 module.exports = router;
